@@ -1,6 +1,5 @@
 'use client';
 
-import { AppConfig } from '@/utils/AppConfig';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
@@ -22,7 +21,7 @@ export const BaseTemplate = (props: {
         <header className="mx-auto flex max-w-screen-md flex-row items-start justify-between border-b border-gray-300">
           <div className="">
             <h1 className="text-3xl font-bold text-gray-900">
-              {AppConfig.name}
+              RoboGuard
             </h1>
             <h2 className="text-xl">
               Turn robots into security guards
