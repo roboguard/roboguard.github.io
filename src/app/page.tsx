@@ -1,19 +1,7 @@
-import { getTranslations } from 'next-intl/server';
-
-type IIndexProps = {
-  params: Promise<{ locale: string }>;
-};
-
-export async function generateMetadata(props: IIndexProps) {
-  const { locale } = await props.params;
-  const t = await getTranslations({
-    locale,
-    namespace: 'Index',
-  });
-
+export async function generateMetadata() {
   return {
-    title: t('meta_title'),
-    description: t('meta_description'),
+    title: 'RoboGuard',
+    description: 'Turn your robot into a security guard',
   };
 }
 

@@ -1,9 +1,4 @@
 /* eslint-disable react-dom/no-missing-iframe-sandbox */
-import { setRequestLocale } from 'next-intl/server';
-
-type IAboutProps = {
-  params: Promise<{ slug: string; locale: string }>;
-};
 
 const VideoSection = ({ title, videoId, description }: { title: string; videoId: string; description?: string }) => (
   <section>
@@ -22,10 +17,7 @@ const VideoSection = ({ title, videoId, description }: { title: string; videoId:
   </section>
 );
 
-export default async function Videos(props: IAboutProps) {
-  const { locale } = await props.params;
-  setRequestLocale(locale);
-
+export default async function Videos() {
   return (
     <div className="mx-auto max-w-screen-md space-y-12 text-base">
       <VideoSection
