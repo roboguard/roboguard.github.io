@@ -19,14 +19,19 @@ export default withSentryConfig(
       poweredByHeader: false,
       reactStrictMode: true,
       serverExternalPackages: ['@electric-sql/pglite'],
+      output: 'export', // Static HTML export
+      basePath: '/roboguard.github.io', // Your repo name
+      images: {
+        unoptimized: true,
+      },
     }),
   ),
   {
     // For all available options, see:
     // https://github.com/getsentry/sentry-webpack-plugin#options
     // FIXME: Add your Sentry organization and project names
-    org: 'nextjs-boilerplate-org',
-    project: 'nextjs-boilerplate',
+    org: 'roboguard',
+    project: 'roboguard',
 
     // Only print logs for uploading source maps in CI
     silent: !process.env.CI,
@@ -62,5 +67,6 @@ export default withSentryConfig(
 
     // Disable Sentry telemetry
     telemetry: false,
+
   },
 );
