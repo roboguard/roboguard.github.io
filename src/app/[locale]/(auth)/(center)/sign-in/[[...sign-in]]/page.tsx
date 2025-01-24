@@ -19,6 +19,12 @@ export async function generateMetadata(props: ISignInPageProps) {
   };
 }
 
+export function generateStaticParams() {
+  return [
+    { locale: 'en' },
+  ];
+}
+
 export default async function SignInPage(props: ISignInPageProps) {
   const { locale } = await props.params;
   setRequestLocale(locale);

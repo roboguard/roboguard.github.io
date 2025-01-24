@@ -18,6 +18,12 @@ export async function generateMetadata(props: IUserProfilePageProps) {
   };
 }
 
+export function generateStaticParams() {
+  return [
+    { locale: 'en' },
+  ];
+}
+
 export default async function UserProfilePage(props: IUserProfilePageProps) {
   const { locale } = await props.params;
   setRequestLocale(locale);
