@@ -19,6 +19,7 @@ export default withSentryConfig(
       poweredByHeader: false,
       reactStrictMode: true,
       serverExternalPackages: ['@electric-sql/pglite'],
+      // Added for GitHub Pages
       output: 'export', // Static HTML export
       basePath: '/roboguard.github.io', // Your repo name
       images: {

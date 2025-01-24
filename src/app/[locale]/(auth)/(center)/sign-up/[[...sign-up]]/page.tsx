@@ -21,7 +21,13 @@ export async function generateMetadata(props: ISignUpPageProps) {
 
 export function generateStaticParams() {
   return [
-    { locale: 'en' },
+    { 'locale': 'en', 'sign-up': [] },
+    { 'locale': 'en', 'sign-up': ['sign-up'] },
+    { 'locale': 'en', 'sign-up': ['sso'] },
+    { 'locale': 'en', 'sign-up': ['continue'] },
+    { 'locale': 'en', 'sign-up': ['verify'] },
+    { 'locale': 'en', 'sign-up': ['verify-email'] },
+    { 'locale': 'en', 'sign-up': ['verify-phone'] },
   ];
 }
 

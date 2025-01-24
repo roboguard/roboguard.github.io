@@ -21,7 +21,12 @@ export async function generateMetadata(props: ISignInPageProps) {
 
 export function generateStaticParams() {
   return [
-    { locale: 'en' },
+    { 'locale': 'en', 'sign-in': [] },
+    { 'locale': 'en', 'sign-in': ['sign-in'] },
+    { 'locale': 'en', 'sign-in': ['sso'] },
+    { 'locale': 'en', 'sign-in': ['factor-one'] },
+    { 'locale': 'en', 'sign-in': ['factor-two'] },
+    { 'locale': 'en', 'sign-in': ['reset-password'] },
   ];
 }
 

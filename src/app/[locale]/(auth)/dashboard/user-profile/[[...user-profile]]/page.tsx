@@ -20,7 +20,9 @@ export async function generateMetadata(props: IUserProfilePageProps) {
 
 export function generateStaticParams() {
   return [
-    { locale: 'en' },
+    { 'locale': 'en', 'user-profile': [] },
+    { 'locale': 'en', 'user-profile': ['profile'] },
+    { 'locale': 'en', 'user-profile': ['security'] },
   ];
 }
 

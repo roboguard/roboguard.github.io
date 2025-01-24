@@ -11,4 +11,5 @@ export default function robots(): MetadataRoute.Robots {
   };
 }
 
+// Added for GitHub Pages
 export const dynamic = 'force-static';

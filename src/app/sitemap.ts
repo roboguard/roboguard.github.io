@@ -13,4 +13,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 }
 
+// Added for GitHub Pages
 export const dynamic = 'force-static';
