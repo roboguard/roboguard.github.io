@@ -12,3 +12,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Add more URLs here
   ];
 }
+
+export const dynamic = 'force-static';
