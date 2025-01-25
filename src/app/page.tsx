@@ -1,7 +1,7 @@
 export async function generateMetadata() {
   return {
     title: 'RoboGuard',
-    description: 'Turn your robot into a security guard',
+    description: 'Autonomous Security, Reinvented',
   };
 }
 
@@ -10,42 +10,44 @@ export default async function Index() {
     <div className="mx-auto max-w-screen-md text-base">
 
       <p className="mb-8">
-        RoboGuard combines advanced AI with quadruped robotics to deliver autonomous
-        security patrols. Our solution reduces costs while providing 24/7 coverage.
+        RoboGuard combines advanced AI robotics with unified software platform to deliver autonomous
+        security patrols featuring the following capabilities:
       </p>
 
-      <h2 className="mb-4 text-xl font-bold">The Market</h2>
-      <p className="mb-8">
-        The global commercial security market is $250B, growing 8% annually. Enterprise facilities spend $30K-50K monthly per location on security, with costs rising 15% yearly due to labor shortages.
-      </p>
-
+      
       <div className="mb-8 bg-gray-50 p-6">
-        <h2 className="mb-4 text-xl font-bold">Our Solution</h2>
+        <h2 className="mb-4 text-xl font-bold"></h2>
         <ul className="list-disc pl-5">
-          <li>Autonomous security robots powered by our proprietary AI</li>
-          <li>Military-grade threat detection and response system</li>
-          <li>Cloud-based fleet management for multi-site deployment</li>
-          <li>$6,500/month per robot - 75% cost reduction</li>
+          <li>Mobile Surveillance on legs, adept at navigating mud, stairs, gravel, snow, and uneven ground</li>
+          <li>360° View AI-based Threat Detection for comprehensive risk identification in real-time</li>
+          <li>Autonomous Navigation and 24/7 surveillance with instant notifications</li>
+          <li>Operator Control Takeover for human intervention on suspicious activities</li>
+          <li>Two-Way Audio for interactive communication and immediate response</li>
+          <li>Advanced Analytics that record and analyze footage for security insights</li>
         </ul>
       </div>
 
-      <p className="mb-4">RoboGuard Platform Features:</p>
-      <ul className="mb-8 list-disc pl-5">
-        <li>Advanced perimeter breach detection using multi-modal AI</li>
-        <li>Autonomous patrol optimization with dynamic threat response</li>
-        <li>Real-time situational awareness with 360° thermal + HD vision</li>
-        <li>Secure command center with predictive analytics</li>
-        <li>Emergency response integration with local authorities</li>
-      </ul>
+      <h2 className="mb-4 text-xl font-bold"></h2>
+      <p className="mb-8">
+      Legged robots have just reached a maturity level where real-world deployment is not only feasible but transformative. 
+      We leverage both quadruped and humanoid robots for security patrolling, offering much more capable solution over existing wheeled security robots at a fraction of the cost. 
+      We've developed robust controllers that allow these robots to easily navigate diverse terrains like mud and stairs, 
+      while also integrating our unified AI and software platform to enable the capabilities of a security guard.
+      <br></br>
+      Thanks for unprecedented energy and effort in robotics research and development currently, we're advancing towards world foundational models that would endow robots with both cognitive and motor skills akin to humans.
+      <br></br>
+      At RoboGuard, we are the first to deploy these advanced robots to handle dangerous and boring tasks, thereby not only enhancing safety & security but also creating substantial economic value. 
+      </p>
 
-      <h2 className="mb-4 text-xl font-bold">Current Supporting Platform</h2>
+      {/* <h2 className="mb-4 text-xl font-bold">Currently Supporting Platforms:</h2>
       <ul className="mb-8 list-disc pl-5">
-        <li>Unitree Robotics</li>
-      </ul>
+        <li>Quadruped Robot Dogs</li>
+        <li>Bipedal Humanoid Robots</li>
+      </ul> */}
 
       <h2 className="mb-4 text-xl font-bold">The Team</h2>
       <p className="mb-8">
-        Founded by graduates from KAIST, with experience at robotics, AI, and software development.
+        Founded by graduates from KAIST/Georgia Tech, experts at AI robotics, and software development.
       </p>
 
       {/* <button className="rounded bg-gray-700 px-4 py-2 text-white transition-colors hover:bg-gray-900" type="button">
