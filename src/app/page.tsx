@@ -1,7 +1,7 @@
 export async function generateMetadata() {
   return {
     title: 'RoboGuard',
-    description: 'Autonomous Security, Reinvented'
+    description: 'Autonomous Security, Reinvented',
   };
 }
 
