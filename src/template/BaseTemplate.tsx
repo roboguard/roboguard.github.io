@@ -24,7 +24,7 @@ export const BaseTemplate = (props: {
               RoboGuard
             </h1>
             <h2 className="text-xl">
-              Reinventing security with advanced AI-driven autonomous robotics.
+              Redefining security with AI robotics
             </h2>
           </div>
           <div className="flex justify-between">
