@@ -13,10 +13,8 @@ export default async function Index() {
         RoboGuard combines advanced AI robotics with unified software platform to deliver autonomous
         security patrols featuring the following capabilities:
       </p>
-
       
       <div className="mb-8 bg-gray-50 p-6">
-{/*         <h2 className="mb-4 text-xl font-bold"></h2> */}
         <ul className="list-disc pl-5">
           <li>Mobile Surveillance on legs, adept at navigating mud, stairs, gravel, snow, and uneven ground</li>
           <li>360° View AI-based Threat Detection for comprehensive risk identification in real-time</li>
@@ -28,10 +26,7 @@ export default async function Index() {
       </div>
 
       <p className="mb-8">
-        Legged robots have just reached a maturity level where real-world deployment is not only feasible but transformative.
-        We leverage both quadruped and humanoid robots for security patrolling, offering much more capable solution over existing wheeled security robots at a fraction of the cost.
-        We've developed robust controllers that allow these robots to easily navigate diverse terrains like mud and stairs,
-        while also integrating our unified AI and software platform to enable the capabilities of a security guard.
+        Legged robots have just reached a maturity level where real-world deployment is not only feasible but transformative. We leverage both quadruped and humanoid robots for security patrolling, offering much more capable solution over existing wheeled security robots at a fraction of the cost. We've developed robust controllers that allow these robots to easily navigate diverse terrains like mud and stairs, while also integrating our unified AI and software platform to enable the capabilities of a security guard.
         <br></br>
         Thanks for unprecedented energy and effort in robotics research and development currently, we're advancing towards world foundational models that would endow robots with both cognitive and motor skills akin to humans.
         <br></br>
