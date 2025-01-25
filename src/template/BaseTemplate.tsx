@@ -42,7 +42,7 @@ export const BaseTemplate = (props: {
                 </li>
                 <li>
                   <Link href="/example" className={navLinkClass('/example')}>
-                    Dashboard Example
+                    Dashboard
                   </Link>
                 </li>
               </ul>
