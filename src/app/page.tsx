@@ -15,9 +15,9 @@ export default async function Index() {
       <div className="mb-8 bg-gray-50 p-6">
         <h2 className="mb-4 text-xl font-bold">Core Capabilities</h2>
         <ul className="list-disc pl-5">
-          <li>Mobile Surveillance on legs, adept at navigating mud, stairs, gravel, snow, and uneven ground</li>
+          <li>Mobile surveillance on legs, capable of navigating mud, stairs, gravel, snow, and uneven terrain</li>
           <li>360° AI-powered threat detection for real-time risk identification</li>
-          <li>Autonomous Navigation and 24/7 surveillance with instant notifications</li>
+          <li>Autonomous Navigation and 24/7 surveillance with instant alerts</li>
           <li>Operator Control Takeover for human intervention on suspicious activities</li>
           <li>Two-way audio for interactive communication and rapid response</li>
           <li>Advanced Analytics that record and analyze footage for security insights</li>
@@ -43,7 +43,7 @@ export default async function Index() {
 
       <h2 className="mb-4 text-xl font-bold">The Team</h2>
       <p className="mb-8">
-        Founded by graduates from KAIST/Georgia Tech, experts at AI robotics, and software development.
+        Founded by graduates from KAIST and Georgia Tech, our team comprises experts in AI, robotics, and software development.
       </p>
 
       {/* <button className="rounded bg-gray-700 px-4 py-2 text-white transition-colors hover:bg-gray-900" type="button"> */}
