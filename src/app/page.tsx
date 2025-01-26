@@ -9,7 +9,7 @@ export default async function Index() {
   return (
     <div className="mx-auto max-w-screen-md text-base">
       <p className="mb-8">
-        RoboGuard combines advanced AI robotics with a unified software platform to deliver autonomous security patrols featuring the following capabilities:
+        RoboGuard combines advanced AI robotics with a unified software platform to deliver autonomous security patrols featuring the following capabilities:<br></br>
       </p>
 
       <div className="mb-8 bg-gray-50 p-6">
