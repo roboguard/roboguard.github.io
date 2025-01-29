@@ -12,8 +12,8 @@ export function SocketProvider({ children }: { children: React.ReactNode }) {
   const [error, setError] = useState<Error | null>(null);
 
   useEffect(() => {
-    // https://python-server-wmjg.onrender.com
-    const ws = new WebSocket('wss://python-server-wmjg.onrender.com/ws');
+    // http://54.193.123.50:8000
+    const ws = new WebSocket('ws://54.193.123.50:8000/ws');
 
     ws.onopen = () => {
       console.log('WebSocket connected successfully');
