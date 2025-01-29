@@ -37,7 +37,6 @@ export function AudioControl() {
   const [isTalking, setIsTalking] = useState(false);
   const [isListening, setIsListening] = useState(true);
   const [volume, setVolume] = useState(80);
-  const [recordings, setRecordings] = useState<AudioRecord[]>(MOCK_RECORDINGS);
 
   const [presetMessages] = useState([
     'Please show your ID',
@@ -125,7 +124,7 @@ export function AudioControl() {
       <div>
         <h4 className="mb-2 text-sm font-medium">Recent Recordings</h4>
         <div className="space-y-2">
-          {recordings.map(recording => (
+          {MOCK_RECORDINGS.map(recording => (
             <div
               key={recording.id}
               className="flex items-center justify-between rounded-lg border border-gray-200 p-2"

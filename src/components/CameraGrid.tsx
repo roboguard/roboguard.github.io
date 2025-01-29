@@ -12,7 +12,6 @@ export function CameraGrid() {
   const { socket, isConnected } = useSocket();
   const [selectedCamera, setSelectedCamera] = useState<string | null>(null);
   const [lastMotion, setLastMotion] = useState<string | null>(null);
-  const [activeStreams, setActiveStreams] = useState<Set<string>>(new Set());
 
   useEffect(() => {
     if (!socket || !isConnected) {
@@ -25,14 +24,10 @@ export function CameraGrid() {
       socket.send(JSON.stringify({ type: 'start_stream', camera_id: id }));
     });
 
-    // Set active streams
-    setActiveStreams(new Set(cameraIds));
-
     return () => {
       cameraIds.forEach((id) => {
         socket.send(JSON.stringify({ type: 'stop_stream', camera_id: id }));
       });
-      setActiveStreams(new Set());
     };
   }, [socket, isConnected]);
 
