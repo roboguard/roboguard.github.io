@@ -24,7 +24,7 @@ export const BaseTemplate = (props: {
               RoboGuard
             </h1>
             <h2 className="text-xl">
-              Turn robots into security guards
+              Redefining security with AI robotics
             </h2>
           </div>
           <div className="flex justify-between">
@@ -42,7 +42,7 @@ export const BaseTemplate = (props: {
                 </li>
                 <li>
                   <Link href="/example" className={navLinkClass('/example')}>
-                    Dashboard Example
+                    Dashboard
                   </Link>
                 </li>
               </ul>
