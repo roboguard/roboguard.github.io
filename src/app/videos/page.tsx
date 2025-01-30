@@ -41,7 +41,7 @@ export default async function Videos() {
 
         <VideoSection
           title="Operator Control Takeover"
-          videoId="youtu.be/RPGcojM81s0"
+          videoId="RPGcojM81s0"
           description="Seamless manual control capabilities allow security personnel to take immediate action when suspicious activities are detected."
         />
 
