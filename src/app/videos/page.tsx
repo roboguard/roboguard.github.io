@@ -59,4 +59,4 @@ export default async function Videos() {
       </div>
     </div>
   );
-};
+}
