@@ -23,20 +23,20 @@ export default async function Videos() {
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
         <VideoSection
           title="All-Terrain Mobile Surveillance"
-          videoId="your-video-id-1"
-          description="Watch our robot navigate mud, stairs, gravel, snow, and uneven terrain with ease, maintaining stable surveillance operations in any environment."
+          videoId="AQ_ogAbccYg"
+          description="Watch our robot showcase advanced parkour capabilites as it is capable of navigates stairs, uneven terrain with ease, maintaining stable surveillance operations in any environment."
         />
 
         <VideoSection
           title="360° AI Threat Detection"
-          videoId="your-video-id-2"
+          videoId="iX8dQpj5mdE"
           description="Our advanced AI system provides comprehensive threat detection, instantly identifying and analyzing potential security risks in real-time."
         />
 
         <VideoSection
-          title="Autonomous Navigation & Alerts"
+          title="Security Analytics"
           videoId="your-video-id-3"
-          description="Experience 24/7 autonomous surveillance with instant security alerts for continuous facility protection."
+          description="Comprehensive analytics platform records and analyzes footage to provide valuable security insights and optimize operations."
         />
 
         <VideoSection
@@ -52,9 +52,9 @@ export default async function Videos() {
         />
 
         <VideoSection
-          title="Security Analytics"
+          title="Autonomous Patrol & Response"
           videoId="your-video-id-6"
-          description="Comprehensive analytics platform records and analyzes footage to provide valuable security insights and optimize operations."
+          description="Experience autonomous 24/7 surveillance with smart route optimization and instant alert capabilities, ensuring continuous coverage of your facility."
         />
       </div>
     </div>
