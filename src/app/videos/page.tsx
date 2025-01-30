@@ -1,7 +1,7 @@
 /* eslint-disable react-dom/no-missing-iframe-sandbox */
 
 const VideoSection = ({ title, videoId, description }: { title: string; videoId: string; description?: string }) => (
-  <section className="h-full">
+  <section>
     <h2 className="mb-4 text-base font-bold">{title}</h2>
     <div className="relative mb-4 aspect-[16/9] bg-gray-200">
       <iframe
@@ -17,8 +17,7 @@ const VideoSection = ({ title, videoId, description }: { title: string; videoId:
   </section>
 );
 
-export default function Videos() {
-  // Removed async since it's not needed
+export default async function Videos() {
   return (
     <div className="mx-auto max-w-screen-xl px-4">
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
@@ -60,4 +59,4 @@ export default function Videos() {
       </div>
     </div>
   );
-}
+};
