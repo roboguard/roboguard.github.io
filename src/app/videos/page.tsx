@@ -35,25 +35,25 @@ export default async function Videos() {
 
         <VideoSection
           title="Security Analytics"
-          videoId="your-video-id-3"
+          videoId="vYd5IjwT5uE"
           description="Comprehensive analytics platform records and analyzes footage to provide valuable security insights and optimize operations."
         />
 
         <VideoSection
           title="Operator Control Takeover"
-          videoId="your-video-id-4"
+          videoId="youtu.be/RPGcojM81s0"
           description="Seamless manual control capabilities allow security personnel to take immediate action when suspicious activities are detected."
         />
 
         <VideoSection
           title="Two-Way Communication"
-          videoId="your-video-id-5"
+          videoId="t1kuW52HNGk"
           description="Interactive audio system enables direct communication between operators and on-site personnel for rapid response."
         />
 
         <VideoSection
           title="Autonomous Patrol & Response"
-          videoId="your-video-id-6"
+          videoId="_ZbnTWCrEPc"
           description="Experience autonomous 24/7 surveillance with smart route optimization and instant alert capabilities, ensuring continuous coverage of your facility."
         />
       </div>
