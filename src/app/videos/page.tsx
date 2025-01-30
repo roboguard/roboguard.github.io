@@ -17,10 +17,10 @@ const VideoSection = ({ title, videoId, description }: { title: string; videoId:
   </section>
 );
 
-export default async function Videos() {
+export default function Videos() {
+  // Removed async since it's not needed
   return (
     <div className="mx-auto max-w-screen-xl px-4">
-      {/* Grid container with 2 columns */}
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
         <VideoSection
           title="All-Terrain Mobile Surveillance"
@@ -60,4 +60,4 @@ export default async function Videos() {
       </div>
     </div>
   );
-};
+}
