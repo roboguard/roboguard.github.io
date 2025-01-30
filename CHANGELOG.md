@@ -1,3 +1,10 @@
+# 1.0.0 (2025-01-30)
+
+
+### Bug Fixes
+
+* video layout ([05c2dfd](https://github.com/roboguard/roboguard.github.io/commit/05c2dfd3b49b4ef0608d845df0b1ab6d49bf37df))
+
 ## [3.60.5](https://github.com/ixartz/Next-js-Boilerplate/compare/v3.60.4...v3.60.5) (2024-12-20)
 
 
