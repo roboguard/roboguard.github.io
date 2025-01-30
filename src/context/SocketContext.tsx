@@ -13,8 +13,8 @@ export function SocketProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     // http://54.193.123.50:8000
-    const ws = new WebSocket('ws://54.193.123.50:8000/ws');
-
+    // const ws = new WebSocket('ws://54.193.123.50:8000/ws');
+    const ws = new WebSocket('ws://ec2-54-193-123-50.us-west-1.compute.amazonaws.com/ws');
     ws.onopen = () => {
       console.log('WebSocket connected successfully');
       setIsConnected(true);
