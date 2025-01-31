@@ -19,23 +19,44 @@ const VideoSection = ({ title, videoId, description }: { title: string; videoId:
 
 export default async function Videos() {
   return (
-    <div className="mx-auto max-w-screen-md space-y-12 text-base">
-      <VideoSection
-        title="Product Overview"
-        videoId="6zPvT0ig1VM"
-        description="RoboGuard combines advanced AI with quadruped robotics to deliver autonomous security patrols. Our solution reduces costs while providing 24/7 coverage."
-      />
+    <div className="mx-auto max-w-screen-xl px-4">
+      <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+        <VideoSection
+          title="All-Terrain Mobile Surveillance"
+          videoId="AQ_ogAbccYg"
+          description="Watch our robot showcase advanced parkour capabilites as it is capable of navigates stairs, uneven terrain with ease, maintaining stable surveillance operations in any environment."
+        />
 
-      <VideoSection
-        title="How It Works"
-        videoId="t0yg-zeOmag"
-        description="Our AI-powered platform enables autonomous navigation, threat detection, and real-time response. The dashboard provides complete control and monitoring."
-      />
+        <VideoSection
+          title="360° AI Threat Detection"
+          videoId="iX8dQpj5mdE"
+          description="Our advanced AI system provides comprehensive threat detection, instantly identifying and analyzing potential security risks in real-time."
+        />
 
-      <VideoSection
-        title="Live Demo"
-        videoId="your-video-id"
-      />
+        <VideoSection
+          title="Security Analytics"
+          videoId="vYd5IjwT5uE"
+          description="Comprehensive analytics platform records and analyzes footage to provide valuable security insights and optimize operations."
+        />
+
+        <VideoSection
+          title="Operator Control Takeover"
+          videoId="RPGcojM81s0"
+          description="Seamless manual control capabilities allow security personnel to take immediate action when suspicious activities are detected."
+        />
+
+        <VideoSection
+          title="Two-Way Communication"
+          videoId="t1kuW52HNGk"
+          description="Interactive audio system enables direct communication between operators and on-site personnel for rapid response."
+        />
+
+        <VideoSection
+          title="Autonomous Patrol & Response"
+          videoId="_ZbnTWCrEPc"
+          description="Experience autonomous 24/7 surveillance with smart route optimization and instant alert capabilities, ensuring continuous coverage of your facility."
+        />
+      </div>
     </div>
   );
-};
+}
