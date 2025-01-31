@@ -1,8 +1,6 @@
 // app/dashboard/DashboardContent.tsx
 'use client';
 
-import { useSocket } from '@/hooks/useSocket';
-import { useEffect, useState } from 'react';
 import { AudioControl } from './AudioControl';
 import { CameraGrid } from './CameraGrid';
 import { ConnectionStatus } from './ConnectionStatus';
@@ -11,15 +9,14 @@ import { RobotStatus } from './RobotStatus';
 import { IncidentTimeline } from './TimeLineComponent';
 
 export function DashboardContent() {
-  const { isConnected, error } = useSocket();
-  const [isInitialLoad, setIsInitialLoad] = useState(true);
+  // const { isConnected } = useSocket();
 
   // Handle initial connection
-  useEffect(() => {
-    if (isConnected) {
-      setIsInitialLoad(false);
-    }
-  }, [isConnected]);
+  // useEffect(() => {
+  //   if (isConnected) {
+  //     setIsInitialLoad(false);
+  //   }
+  // }, [isConnected]);
 
   // if (error) {
   //   return (
