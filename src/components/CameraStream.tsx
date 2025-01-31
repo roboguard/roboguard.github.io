@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 // components/CameraStream.tsx
 'use client';
 
@@ -262,6 +263,27 @@ export function CameraStream({ cameraId }: CameraStreamProps) {
     );
   }
 
+  if (!isConnected) {
+    return (
+      <div className="relative overflow-hidden rounded-lg bg-gray-900">
+        <div className="absolute inset-0 flex items-center justify-center bg-black/50 text-white">
+          Connecting...
+        </div>
+        <img
+          ref={imgRef}
+          alt={`Camera ${cameraId}`}
+          className="size-[300px] object-cover"
+          onLoad={handleImageLoad}
+        />
+        <div className="absolute bottom-2 left-2 rounded bg-black/50 px-2 py-1 text-sm text-white">
+          Camera
+          {cameraId}
+          {isConnected ? '🟢' : '🔴'}
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="relative overflow-hidden rounded-lg bg-gray-900">
       {isLoading && (
@@ -269,12 +291,6 @@ export function CameraStream({ cameraId }: CameraStreamProps) {
           <div className="size-8 animate-spin rounded-full border-b-2 border-white" />
         </div>
       )}
-      {!isConnected && (
-        <div className="absolute inset-0 flex items-center justify-center text-white">
-          Connecting...
-        </div>
-      )}
-      {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         ref={imgRef}
         alt={`Camera ${cameraId}`}

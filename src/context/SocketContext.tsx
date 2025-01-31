@@ -12,8 +12,7 @@ export function SocketProvider({ children }: { children: React.ReactNode }) {
   const [error, setError] = useState<Error | null>(null);
 
   useEffect(() => {
-    // http://54.193.123.50:8000
-    // const ws = new WebSocket('ws://54.193.123.50:8000/ws');
+    // const ws = new WebSocket('ws://localhost:8000/ws');
     const ws = new WebSocket('wss://ec2-54-193-123-50.us-west-1.compute.amazonaws.com/ws');
     ws.onopen = () => {
       console.log('WebSocket connected successfully');
